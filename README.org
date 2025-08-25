@@ -20,7 +20,10 @@ main()
 * TODO
 
 [ ] Make it a static library which i can put in /usr/lib
+
 [ ] Add validation (what if the user jumbles up the input order)
+
 [ ] Add tests https://github.com/Snaipe/Criterion
+
 [ ] Return a non-stb char**, so user doesnt have to remember to arrfree() it.
 
