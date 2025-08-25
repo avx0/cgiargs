@@ -1,0 +1,26 @@
+* cgiargs
+
+Header-only library to parse CGI strings as key value ppairs and return a flat char**.
+
+* Usage
+
+#+begin_src C
+#include "cgiargs.h"
+#include <stdio.h>
+
+int
+main()
+{
+     char **d = get_cgiargs("QUERY_STRING");
+     for (int i = 0; i < arrlen(d); i++) printf("['%s']\n", d[i]);
+     arrfree(d);
+}
+#+end_src
+
+* TODO
+
+[ ] Make it a static library which i can put in /usr/lib
+[ ] Add validation (what if the user jumbles up the input order)
+[ ] Add tests https://github.com/Snaipe/Criterion
+[ ] Return a non-stb char**, so user doesnt have to remember to arrfree() it.
+
