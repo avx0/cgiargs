@@ -1,10 +1,10 @@
-* cgiargs
+# cgiargs
 
 Header-only library to parse CGI strings as key value ppairs and return a flat char**.
 
-* Usage
+# Usage
 
-#+begin_src C
+```c
 #include "cgiargs.h"
 #include <stdio.h>
 
@@ -15,9 +15,9 @@ main()
      for (int i = 0; i < arrlen(d); i++) printf("['%s']\n", d[i]);
      arrfree(d);
 }
-#+end_src
+```
 
-* TODO
+# TODO
 
 - [ ] Make it a static library which i can put in /usr/lib
 - [ ] Add validation (what if the user jumbles up the input order)
